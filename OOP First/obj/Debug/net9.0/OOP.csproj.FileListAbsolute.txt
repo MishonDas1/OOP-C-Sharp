@@ -1,0 +1,15 @@
+F:\font\OOP\bin\Debug\net9.0\OOP.exe
+F:\font\OOP\bin\Debug\net9.0\OOP.deps.json
+F:\font\OOP\bin\Debug\net9.0\OOP.runtimeconfig.json
+F:\font\OOP\bin\Debug\net9.0\OOP.dll
+F:\font\OOP\bin\Debug\net9.0\OOP.pdb
+F:\font\OOP\obj\Debug\net9.0\OOP.GeneratedMSBuildEditorConfig.editorconfig
+F:\font\OOP\obj\Debug\net9.0\OOP.AssemblyInfoInputs.cache
+F:\font\OOP\obj\Debug\net9.0\OOP.AssemblyInfo.cs
+F:\font\OOP\obj\Debug\net9.0\OOP.csproj.CoreCompileInputs.cache
+F:\font\OOP\obj\Debug\net9.0\OOP.sourcelink.json
+F:\font\OOP\obj\Debug\net9.0\OOP.dll
+F:\font\OOP\obj\Debug\net9.0\refint\OOP.dll
+F:\font\OOP\obj\Debug\net9.0\OOP.pdb
+F:\font\OOP\obj\Debug\net9.0\OOP.genruntimeconfig.cache
+F:\font\OOP\obj\Debug\net9.0\ref\OOP.dll
