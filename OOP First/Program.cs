@@ -1,5 +1,8 @@
 ﻿using System;
 
+namespace Mishon
+{
+
 public class Person 
 {
     public string name;
@@ -24,4 +27,5 @@ public class Program
         Console.WriteLine($"First Person Name:{p2.name} And Age is {p2.age}");
         
     }
+}
 }

@@ -1,0 +1,15 @@
+F:\font\OOP-c--New\OOP 3rd\obj\Debug\net9.0\OOP 3rd.GeneratedMSBuildEditorConfig.editorconfig
+F:\font\OOP-c--New\OOP 3rd\obj\Debug\net9.0\OOP 3rd.AssemblyInfoInputs.cache
+F:\font\OOP-c--New\OOP 3rd\obj\Debug\net9.0\OOP 3rd.AssemblyInfo.cs
+F:\font\OOP-c--New\OOP 3rd\obj\Debug\net9.0\OOP 3rd.csproj.CoreCompileInputs.cache
+F:\font\OOP-c--New\OOP 3rd\obj\Debug\net9.0\OOP 3rd.sourcelink.json
+F:\font\OOP-c--New\OOP 3rd\bin\Debug\net9.0\OOP 3rd.exe
+F:\font\OOP-c--New\OOP 3rd\bin\Debug\net9.0\OOP 3rd.deps.json
+F:\font\OOP-c--New\OOP 3rd\bin\Debug\net9.0\OOP 3rd.runtimeconfig.json
+F:\font\OOP-c--New\OOP 3rd\bin\Debug\net9.0\OOP 3rd.dll
+F:\font\OOP-c--New\OOP 3rd\bin\Debug\net9.0\OOP 3rd.pdb
+F:\font\OOP-c--New\OOP 3rd\obj\Debug\net9.0\OOP 3rd.dll
+F:\font\OOP-c--New\OOP 3rd\obj\Debug\net9.0\refint\OOP 3rd.dll
+F:\font\OOP-c--New\OOP 3rd\obj\Debug\net9.0\OOP 3rd.pdb
+F:\font\OOP-c--New\OOP 3rd\obj\Debug\net9.0\OOP 3rd.genruntimeconfig.cache
+F:\font\OOP-c--New\OOP 3rd\obj\Debug\net9.0\ref\OOP 3rd.dll
