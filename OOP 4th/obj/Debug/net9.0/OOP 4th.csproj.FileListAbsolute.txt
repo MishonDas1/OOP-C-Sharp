@@ -1,0 +1,15 @@
+F:\font\OOP-c--New\OOP 4th\bin\Debug\net9.0\OOP 4th.exe
+F:\font\OOP-c--New\OOP 4th\bin\Debug\net9.0\OOP 4th.deps.json
+F:\font\OOP-c--New\OOP 4th\bin\Debug\net9.0\OOP 4th.runtimeconfig.json
+F:\font\OOP-c--New\OOP 4th\bin\Debug\net9.0\OOP 4th.dll
+F:\font\OOP-c--New\OOP 4th\bin\Debug\net9.0\OOP 4th.pdb
+F:\font\OOP-c--New\OOP 4th\obj\Debug\net9.0\OOP 4th.GeneratedMSBuildEditorConfig.editorconfig
+F:\font\OOP-c--New\OOP 4th\obj\Debug\net9.0\OOP 4th.AssemblyInfoInputs.cache
+F:\font\OOP-c--New\OOP 4th\obj\Debug\net9.0\OOP 4th.AssemblyInfo.cs
+F:\font\OOP-c--New\OOP 4th\obj\Debug\net9.0\OOP 4th.csproj.CoreCompileInputs.cache
+F:\font\OOP-c--New\OOP 4th\obj\Debug\net9.0\OOP 4th.sourcelink.json
+F:\font\OOP-c--New\OOP 4th\obj\Debug\net9.0\OOP 4th.dll
+F:\font\OOP-c--New\OOP 4th\obj\Debug\net9.0\refint\OOP 4th.dll
+F:\font\OOP-c--New\OOP 4th\obj\Debug\net9.0\OOP 4th.pdb
+F:\font\OOP-c--New\OOP 4th\obj\Debug\net9.0\OOP 4th.genruntimeconfig.cache
+F:\font\OOP-c--New\OOP 4th\obj\Debug\net9.0\ref\OOP 4th.dll
