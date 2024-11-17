@@ -1,0 +1,33 @@
+using System;
+
+namespace MyApp
+{
+    class Person
+    {
+        private string name;
+        private int age;
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public int Age
+        {
+            get { return age; }
+            set { age = value; }
+        }
+    }
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Person p1 = new Person();
+            p1.Name = "John";
+            p1.Age = 25;
+            Console.WriteLine("Name: " + p1.Name + " Age: " + p1.Age);
+        }
+    }
+}
