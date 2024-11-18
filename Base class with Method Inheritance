@@ -1,0 +1,31 @@
+using System;
+
+namespace MyApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            DerivedClass derived = new DerivedClass();
+            Console.WriteLine($"This is Supershop and its name is: {derived.MarketName}, This shop was developed in: {derived.Develop}, and this shop has over {derived.Product}, and the product price is very {derived.Price}.");
+            derived.Method();
+        }
+    }
+
+    public class BaseClass
+    {
+        public string MarketName = "SWAPNA";
+        public int Develop = 2002;
+        public void Method()
+        {
+            Console.WriteLine("HI how are you... ");
+        }
+    }
+
+    public class DerivedClass : BaseClass
+    {
+        public string Product = "600+";
+        public string Price = "Cheap Rate";
+
+    }
+}
