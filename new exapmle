@@ -1,0 +1,57 @@
+using System;
+
+public class Character
+{
+    public string Name;
+    public int Hp;
+    public int Exp;
+
+    public Character(string name, int hp, int exp)
+    {
+        Name = name;
+        Hp = hp;
+        Exp = exp;
+    }
+
+    public void Attack()
+    {
+        Exp = 100;
+        Console.WriteLine(Name + " attacks🔪 Current EXP: " + Exp);
+    }
+
+    public void TakeDamage(int damage)
+    {
+       
+        Console.WriteLine("Damage is 25");
+    }
+}
+
+public class Hero : Character
+{
+    public string SpecialAttack;
+    public string Weapon;
+
+    public Hero(string name, int hp, int exp, string specialAttack, string weapon)
+        : base(name, hp, exp)
+    {
+        SpecialAttack = specialAttack;
+        Weapon = weapon;
+    }
+
+    public void Attack()
+    {
+        base.Attack();
+        Console.WriteLine(Name + " uses " + Weapon + " to perform a special attack: " + SpecialAttack + "!");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Hero hero = new Hero("MP40", 100, 0, "For man", "");
+        hero.Attack();
+        hero.TakeDamage(20);
+    }
+}
+
