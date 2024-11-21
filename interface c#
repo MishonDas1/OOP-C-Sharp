@@ -1,0 +1,55 @@
+using System;
+
+namespace MyApp
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            Geometry triangle = new Geometry("triangle", "red", "black");
+            Console.WriteLine(triangle.shape);
+            Console.WriteLine(triangle.color);
+            Console.WriteLine(triangle.border);
+
+            Color C = triangle;
+            C.fillColor("yellow");
+
+            Border B = triangle;
+            B.fillBorder(5, "blue");
+        }
+    }
+
+    interface Color
+    {
+        void fillColor(string color);
+    }
+
+    interface Border
+    {
+        void fillBorder(int width, string borderColor);
+    }
+
+    class Geometry : Color, Border
+    {
+        public string shape;
+        public string color;
+        public string border;
+
+        public Geometry(string shape, string color, string border)
+        {
+            this.shape = shape;
+            this.color = color;
+            this.border = border;
+        }
+
+        public void fillColor(string color)
+        {
+            Console.WriteLine($"{this.shape} is filled with color {color}");
+        }
+
+        public void fillBorder(int width, string borderColor)
+        {
+            Console.WriteLine($"{this.border} border is {borderColor} with width {width}");
+        }
+    }
+}
