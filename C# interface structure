@@ -1,0 +1,33 @@
+using System;
+
+class HelloWorld {
+  static void Main() {
+   
+  }
+}
+
+interface Color {
+    void fillColor(); 
+}
+interface border{
+    void fillboarder();
+}
+
+class Geometry :Color,border{
+    public string shape;   
+    public string color;  
+    public string border; 
+
+    public Geometry(string shape, string color, string border) {
+        this.shape = shape;
+        this.color = color;
+        this.border = border;
+    }
+   void  Color.fillColor(string c){
+     
+      Console.WriteLine($"{this.shape} is filter with color");
+   }
+   void border.fillboarder(){
+       Console.WriteLine($"{this.border} is ");
+   }
+}
