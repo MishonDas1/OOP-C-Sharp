@@ -1,0 +1,39 @@
+using System;
+
+namespace Mygp
+{
+    
+    public class x
+    {
+        public x()
+        {
+            Console.WriteLine("My name is Mishon---This is Baseclass");
+        }
+
+        ~x()
+        {
+            Console.WriteLine("My age is 21---This is Destructor");
+        }
+    }
+
+    
+    public class y : x
+    {
+        public y()
+        {
+            Console.WriteLine("I am from Noakhali ----This is Derived Class");
+        }
+        ~y(){
+            Console.WriteLine("My Upazila is Hatiya--This is Derived class Destructor");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            y mishon = new y();
+        }
+    }
+}
