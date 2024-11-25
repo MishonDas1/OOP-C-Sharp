@@ -1,0 +1,30 @@
+using System;
+
+class Obj
+{
+    public int x;
+
+    public Obj(int x)
+    {
+        this.x = x;
+    }
+
+    public Obj(Obj obj)
+    {
+        this.x = obj.x;
+    }
+}
+
+class HelloWorld
+{
+    static void Main()
+    {
+        Obj obj1 = new Obj(10);
+        Obj obj2 = new Obj(obj1);
+        Console.WriteLine($"{obj1.x}");
+        Console.WriteLine($"{obj2.x}");
+        obj1.x = 20;
+        Console.WriteLine($"{obj1.x}");
+        Console.WriteLine($"{obj2.x}");
+    }
+}
