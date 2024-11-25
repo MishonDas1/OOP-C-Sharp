@@ -1,0 +1,19 @@
+using System;
+
+class Mishon
+{
+    ~Mishon()
+    {
+        Console.WriteLine("HI");
+    }
+}
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+      
+        Mishon arnab = new Mishon();
+        
+    }
+}
