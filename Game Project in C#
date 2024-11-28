@@ -1,0 +1,220 @@
+using System;
+using System.Collections;
+
+public abstract class Player
+{
+    public string Name;
+    public int Health = 100;
+    public int Energy = 100;
+    public int XP = 0;
+    public Inventory Inventory = new Inventory();
+
+    public Player(string name)
+    {
+        Name = name;
+    }
+
+    public void GainXP(int amount)
+    {
+        XP += amount;
+        CheckEvolution();
+    }
+
+    public void TakeDamage(int damage)
+    {
+        Health -= damage;
+        if (Health <= 0)
+        {
+            Console.WriteLine($"{Name} has died.");
+        }
+    }
+
+    public abstract void Attack();
+    protected abstract void CheckEvolution();
+}
+
+public class Warrior : Player
+{
+    public Warrior(string name) : base(name) {}
+
+    public override void Attack()
+    {
+        if (Energy > 0)
+        {
+            Console.WriteLine($"{Name} performs a melee attack.");
+            Energy -= 10;
+        }
+        else
+        {
+            Console.WriteLine($"{Name} is out of energy.");
+        }
+    }
+
+    protected override void CheckEvolution()
+    {
+        if (XP >= 100)
+        {
+            Console.WriteLine($"{Name} has evolved to a higher rank.");
+        }
+    }
+}
+
+public class Mage : Player
+{
+    public Mage(string name) : base(name) {}
+
+    public override void Attack()
+    {
+        if (Energy > 0)
+        {
+            Console.WriteLine($"{Name} performs a magical attack.");
+            Energy -= 20;
+        }
+        else
+        {
+            Console.WriteLine($"{Name} is out of energy.");
+        }
+    }
+
+    protected override void CheckEvolution()
+    {
+        if (XP >= 100)
+        {
+            Console.WriteLine($"{Name} has evolved to a higher rank.");
+        }
+    }
+}
+
+public class NPC
+{
+    public string Name;
+
+    public NPC(string name)
+    {
+        Name = name;
+    }
+
+    public void OfferSideQuest(Player player)
+    {
+        Console.WriteLine($"{Name} offers a side quest to {player.Name}.");
+        player.GainXP(10);
+    }
+}
+
+public class Boss
+{
+    public string Name;
+    public int Health = 500;
+    public ArrayList Minions = new ArrayList();
+
+    public Boss(string name)
+    {
+        Name = name;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        Health -= damage;
+        if (Health <= 0)
+        {
+            Console.WriteLine($"{Name} has been defeated. You win!");
+        }
+    }
+}
+
+public class Minion
+{
+    public string Name;
+    public int Health = 50;
+
+    public Minion(string name)
+    {
+        Name = name;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        Health -= damage;
+        if (Health <= 0)
+        {
+            Console.WriteLine($"{Name} has been defeated.");
+        }
+    }
+}
+
+public class Item
+{
+    public string Name;
+
+    public Item(string name)
+    {
+        Name = name;
+    }
+}
+
+public class Inventory
+{
+    private Item[] items = new Item[10];
+    private int itemCount = 0;
+
+    public void AddItem(Item item)
+    {
+        if (itemCount < items.Length)
+        {
+            items[itemCount++] = item;
+            Console.WriteLine($"{item.Name} has been added to the inventory.");
+        }
+        else
+        {
+            Console.WriteLine("Inventory is full.");
+        }
+    }
+
+    public void RemoveItem(Item item)
+    {
+        int index = Array.IndexOf(items, item);
+        if (index >= 0)
+        {
+            for (int i = index; i < itemCount - 1; i++)
+            {
+                items[i] = items[i + 1];
+            }
+            items[--itemCount] = null;
+            Console.WriteLine($"{item.Name} has been removed from the inventory.");
+        }
+        else
+        {
+            Console.WriteLine($"{item.Name} is not in the inventory.");
+        }
+    }
+
+    public void ListItems()
+    {
+        Console.WriteLine("Inventory items:");
+        for (int i = 0; i < itemCount; i++)
+        {
+            Console.WriteLine(items[i].Name);
+        }
+    }
+}
+
+public class Game
+{
+    public static void Main(string[] args)
+    {
+        Player player = new Warrior("Arthur");
+        player.Attack();
+        player.GainXP(120);
+        player.Inventory.AddItem(new Item("Sword"));
+        player.Inventory.ListItems();
+
+        NPC npc = new NPC("Gandalf");
+        npc.OfferSideQuest(player);
+
+        Boss boss = new Boss("Dragon");
+        boss.TakeDamage(600);
+
+        Minion minion = new Minion("Goblin");
+        minion.TakeDamage(60);
+    }
+}
